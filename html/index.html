@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="HTML5 Audio Visualizer">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="js/html5_audio.js"></script>
+        <title>Websocket Demo</title>
+        <link type="text/css" rel="stylesheet" href="style/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="page-header"><h3>Audio Spectrum</h3></div>
+            <div id="wrapper">
+              <div id="fileWrapper" class="file_wrapper">
+                <label for="uploadedFile">Select a file to play:</label><input type="file" id="uploadedFile" />
+              </div>
+              <div id="canvasWrapper">
+                <canvas id='spectrum'></canvas>
+                <div id="controls">
+                <input id="volume" type="range" min="-0.5" max="0.5" step="0.01" value="0"/>
+                <button id="stop" type="button">X</button>
+              </div>
+            </div>
+            <div id = "alert_placeholder"></div>
+            <div id="panel-footer">Based on: esphttpd(Sprite_tm), websocketd(morrissinger) WS2812/I2S(Charles Lohr)</div> 
+        </div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+html, body {
+	margin: 0;
+	font-family: arial, "Helvitica";
+}
+#fileWrapper{
+	transition:all 0.5s ease;
+	margin-bottom: 5px;	
+}
+#fileWrapper:hover{
+	opacity: 1!important;
+}
+#canvasWrapper{
+	margin: 0;
+	width: 400px;
+	position: relative;
+}
+#spectrum {
+	background-color:black;
+	width: 350px;
+	height: 350px;
+}
+#controls{
+	position: absolute;
+	top: 0;
+	left: 352px;
+}
+#volume{
+	-webkit-appearance: slider-vertical;
+	height: 320px;
+}
+#stop{
+	margin-top: 5px;
+    height: 25px;
+	width: 48px;
+}
